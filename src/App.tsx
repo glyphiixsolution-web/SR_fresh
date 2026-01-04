@@ -9,11 +9,14 @@ import { Admissions } from './pages/Admissions';
 import { Events } from './pages/Events';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
+import { ScrollToTop } from './components/ScrollToTop';
 import './styles/globals.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* ✅ ADD THIS LINE */}
+
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
